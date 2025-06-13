@@ -85,8 +85,6 @@ Run `npm install` on the root folder and it will set up a pre-commit hook to lin
 
 These commands run the individual `lint` and `lint-staged` scripts in both the `frontend` and the `backend` folders, and they will respect individual configurations of these folders.
 
-# License
 
-MIT License
 
 
