@@ -1,0 +1,34 @@
+{
+  "name": "delaygram",
+  "version": "1.0.1",
+  "private": true,
+  "description": "Instagram clone with React, Reduxt, and Node.js/Express",
+  "scripts": {
+    "lint-staged-backend": "cd backend && npm run lint-staged",
+    "lint-staged-frontend": "cd frontend && npm run lint-staged",
+    "lint-staged": "concurrently \"npm run lint-staged-backend\" \"npm run lint-staged-frontend\"",
+    "lint-backend": "cd backend && npm run lint",
+    "lint-frontend": "cd frontend && npm run lint",
+    "lint": "concurrently \"npm run lint-backend\" \"npm run lint-frontend\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cihat/delaygram.git"
+  },
+  "keywords": [],
+  "author": "Cihat Salik <cihatsalik1@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cihat/instragram-clone/issues"
+  },
+  "homepage": "https://github.com/cihat/instragram-clone#readme",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "husky": "^4.2.5"
+  }
+}
